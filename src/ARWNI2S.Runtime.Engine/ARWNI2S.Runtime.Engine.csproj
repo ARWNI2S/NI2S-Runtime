@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>ARWNI2S.Runtime.Engine</PackageId>
+    <Title>ARWNI2S Runtime Engine</Title>
+    <Description>ARWNI2S engine runtime.</Description>
+    <TargetFrameworks>$(DefaultTargetFrameworks)</TargetFrameworks>
+    <RootNamespace>ARWNI2S.Runtime</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(NI2SFullBuild) == '' OR $(CoreSourceRoot) == ''">
+    <PackageReference Include="ARWNI2S.Sdk" />
+  </ItemGroup>
+  <ItemGroup Condition="$(NI2SFullBuild) == 'true' AND $(CoreSourceRoot) != ''">
+    <ProjectReference Include="$(CoreSourceRoot)src\ARWNI2S.Sdk\ARWNI2S.Sdk.csproj" />
+  </ItemGroup>
+
+</Project>

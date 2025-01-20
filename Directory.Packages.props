@@ -1,0 +1,28 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <!-- Shared Package Versions -->
+    <MicrosoftPackageLatestVersion>9.0.0</MicrosoftPackageLatestVersion>
+    <MicrosoftFrameworkVersion>8.0.0</MicrosoftFrameworkVersion>
+    <MicrosoftOrleansVersion>9.0.1</MicrosoftOrleansVersion>
+    <FluentMigratorVersion>6.2.0</FluentMigratorVersion>
+    <!-- Shared Test Package Versions -->
+    <xUnitVersion>2.9.2</xUnitVersion>
+    <xUnitRunnerVersion>2.8.2</xUnitRunnerVersion>
+    <CsCheckVersion>4.0.0</CsCheckVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Narrative Interactive Intelligent Simulator packages -->
+    <!-- System packages -->
+    <!-- Microsoft packages -->
+    <!-- Abstractions packages -->
+    <!-- Azure packages -->
+    <!-- Orleans packages -->
+    <!-- 3rd party packages -->
+    <!-- Test related packages -->
+    <!-- Source repo related packages -->
+    <PackageVersion Include="ARWNI2S.Sdk" Version="1.0.0-dev-202501190753" />
+    <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
+  </ItemGroup>
+</Project>
