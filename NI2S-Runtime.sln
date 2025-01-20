@@ -1,11 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DD45B775-8F15-466C-A4A9-29576E0BCEF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARWNI2S.Runtime.Engine", "src\ARWNI2S.Runtime.Engine\ARWNI2S.Runtime.Engine.csproj", "{D6FBEF59-45B0-4DE1-BFB5-BB0232BE3F1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{31484F01-D4C1-4B68-BAED-680EECC03446}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB006161-DD95-4A88-A26B-6C1FE4F607C3}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Build.targets = src\Directory.Build.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,5 +36,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D6FBEF59-45B0-4DE1-BFB5-BB0232BE3F1A} = {DD45B775-8F15-466C-A4A9-29576E0BCEF3}
+		{AB006161-DD95-4A88-A26B-6C1FE4F607C3} = {31484F01-D4C1-4B68-BAED-680EECC03446}
 	EndGlobalSection
 EndGlobal

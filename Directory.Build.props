@@ -39,7 +39,7 @@
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="$(NI2SFullBuild) == ''">
     <None Include="$(SourceRoot)assets/logo_128.png" Pack="true" Visible="false" PackagePath="/" />
   </ItemGroup>
 

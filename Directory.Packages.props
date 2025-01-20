@@ -13,6 +13,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- Narrative Interactive Intelligent Simulator packages -->
+    <PackageVersion Include="ARWNI2S.Sdk" Version="1.0.0" />
     <!-- System packages -->
     <!-- Microsoft packages -->
     <!-- Abstractions packages -->
@@ -21,7 +22,6 @@
     <!-- 3rd party packages -->
     <!-- Test related packages -->
     <!-- Source repo related packages -->
-    <PackageVersion Include="ARWNI2S.Sdk" Version="1.0.0-dev-202501190753" />
     <PackageVersion Include="Microsoft.SourceLink.AzureRepos.Git" Version="8.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
   </ItemGroup>
