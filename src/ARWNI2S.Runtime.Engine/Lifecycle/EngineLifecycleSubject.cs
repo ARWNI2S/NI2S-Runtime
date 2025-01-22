@@ -11,6 +11,8 @@ namespace ARWNI2S.Runtime.Lifecycle
     /// </summary>
     public class EngineLifecycleSubject : LifecycleSubject, IEngineLifecycleSubject
     {
+        public Name Name2 { get; } = new Name("duplicate");
+
         private static readonly ImmutableDictionary<int, string> StageNames = GetStageNames(typeof(NI2SLifecycleStage));
         private readonly List<MonitoredObserver> observers;
         private int highestCompletedStage;

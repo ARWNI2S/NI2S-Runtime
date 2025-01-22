@@ -5,6 +5,7 @@
     <Title>ARWNI2S Runtime Engine</Title>
     <Description>ARWNI2S engine runtime.</Description>
     <TargetFrameworks>$(DefaultTargetFrameworks)</TargetFrameworks>
+    <NI2SBuildTimeCodeGen>true</NI2SBuildTimeCodeGen>
     <RootNamespace>ARWNI2S.Runtime</RootNamespace>
   </PropertyGroup>
 
@@ -13,6 +14,15 @@
   </ItemGroup>
   <ItemGroup Condition="$(NI2SFullBuild) == 'true' AND $(CoreSourceRoot) != ''">
     <ProjectReference Include="$(CoreSourceRoot)src\ARWNI2S.Sdk\ARWNI2S.Sdk.csproj" />
+  </ItemGroup>
+
+  
+  
+  
+  
+  <ItemGroup>
+    <Compile Remove="Engine\WorkingQueue.cs" />
+    <Compile Remove="Lifecycle\IStartupTask.cs" />
   </ItemGroup>
 
 </Project>
