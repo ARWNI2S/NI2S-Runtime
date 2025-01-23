@@ -1,6 +1,7 @@
 ﻿namespace ARWNI2S.Runtime
 {
-    public class NI2SEngine
+    public sealed class NI2SEngine
     {
+
     }
 }
